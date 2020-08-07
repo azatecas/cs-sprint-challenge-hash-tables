@@ -11,7 +11,7 @@ def get_indices_of_item_weights(weights, length, limit):
     #else put it in the index
 
     for i in range(length):
-        curr_weight = weight[i]
+        curr_weight = weights[i]
         comp_weight = limit - curr_weight
         if comp_weight in index:
             comp_index = index[comp_weight]
@@ -19,6 +19,6 @@ def get_indices_of_item_weights(weights, length, limit):
             index_list.sort(reverse=True)
             return index_list
         else:
-            index[curr_weight] - i
+            index[curr_weight] = i
 
     # return None
