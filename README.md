@@ -1,4 +1,7 @@
+initial commit
 # Sprint Challenge: Hash Tables
+
+.
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 

@@ -3,6 +3,17 @@ def has_negatives(a):
     YOUR CODE HERE
     """
     # Your code here
+    cache = {}
+    result = []
+
+    for (index, items) in enumerate(a):
+        cache[index] = items
+    
+    for item in a:
+        if (item * -1) in cache:
+            if item == 0:
+                continue
+            result.append(-item)
 
     return result
 
