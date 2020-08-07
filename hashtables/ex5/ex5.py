@@ -1,5 +1,5 @@
 # Your code here
-
+import os
 
 
 def finder(files, queries):
@@ -7,6 +7,13 @@ def finder(files, queries):
     YOUR CODE HERE
     """
     # Your code here
+    index = {}
+    result = []
+    for query in queries:
+        index[query] = 1
+    for file in files:
+        if os.path.basename(file) in index:
+            result.append(file)
 
     return result
 
